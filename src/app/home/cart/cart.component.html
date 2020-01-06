@@ -1,0 +1,31 @@
+
+<div class="example-card"  >
+    <mat-card class="card" *ngFor="let item of items;let i = index">
+        <div>
+        <mat-card-title> {{item.name}}</mat-card-title><br/>
+        <mat-card-content> 
+            <img [src]="item.img"/>
+            <br/>
+            <p>Price: {{item.price}}</p>
+            <p>Type: {{item.type}}</p>
+            <p>QTY: {{item.qty}}</p>     
+            
+             <input type="number" id="md-1" name="quantity" placeholder="Enter Quantity" [(ngModel)]="item.qty" (blur)="onBlurMethod()">      
+          
+            <br/><br/>
+            <button mat-raised-button color="warn" id="max" (click)="increase(item)">+</button>  <button mat-raised-button color="warn" (click)="decrease(item)">-</button>    <button mat-raised-button color="warn" id="rmv" (click)="remove(item)"><mat-icon>delete</mat-icon></button>
+            
+        </mat-card-content>
+        </div>
+    </mat-card>
+    
+                
+</div>
+
+<br/>
+<pre>
+<strong style="align-content: center;">TOTAL</strong> : {{total}}     
+
+<button mat-raised-button color="accent" (click)="pay()">PAYMENT</button>
+</pre>
+
