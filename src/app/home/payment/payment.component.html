@@ -1,9 +1,6 @@
+<body>
 <pre>
-    
     <mat-toolbar class="md-medium-tall">  ORDERING FOR - {{username}}  </mat-toolbar>
-        
-    
-   
     <form #f="ngForm">
     <mat-radio-group aria-label="Payment mode">
         <mat-radio-button  name="debit" value="1" (click)="setradio('Debit')" [(ngModel)]="debit" #Debit="ngModel">DEBIT</mat-radio-button>
@@ -20,9 +17,7 @@
     </mat-radio-group> 
 </form><br/>
     <button matTooltip="Refresh" mat-icon-button  (click)="refresh()"><mat-icon>refresh</mat-icon></button> <span id="captch">{{captch}}</span><br/>
-    <div class="formGroup">
-    <input type="text" [(ngModel)]="captchValue"/></div>
-    
+    <div class="formGroup">   <input type="text" [(ngModel)]="captchValue"/></div>
     <button mat-raised-button color="primary" [disabled]="!captchValue" (click)="pay()">pay</button>  
     <span *ngIf="showError">Invalid captch</span>
 
@@ -56,6 +51,7 @@
    
  
 </pre>
+</body>
 
  <!-- <div *ngIf="isSelected('Credit')">  
             <input type="text"/> Female radio button selected  

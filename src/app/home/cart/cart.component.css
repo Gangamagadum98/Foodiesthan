@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: lightgray;
 }
 .card{
     width:25%;
@@ -19,4 +20,13 @@
 }
 #rmv{
     margin-left: 15px;
+}
+body{
+    background-color: lightgray;
+}
+.total{
+    margin-left: 60px;
+}
+.pay{
+    margin-left: 60px;
 }

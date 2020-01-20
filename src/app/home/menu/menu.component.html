@@ -1,4 +1,4 @@
-<br/>
+
 
 <div *ngIf="loading else loaded">
         <!-- loading ... -->
@@ -6,14 +6,15 @@
                 <mat-progress-spinner mode="indeterminate" color="primary"></mat-progress-spinner>
         </div>
 </div>
-<div>
-<input type="text" placeholder="Search" id="search" [(ngModel)]="searchText">    <button mat-fab aria-label="Example icon-button with a search icon" (click)="search(searchText)"><mat-icon>search</mat-icon></button></div>
+<!-- <div class="bg-1"> -->
+    <body>
+    <br/>
+<input type="text" placeholder="Search" id="search" [(ngModel)]="searchText">    <button mat-fab aria-label="Example icon-button with a search icon" (click)="search(searchText)"><mat-icon>search</mat-icon></button>
              
 <!-- <h1>STARTERS :</h1> -->
 <div class="example-card" [(ngModel)]="durationInSeconds" >
        
-        
-    <mat-card class="card" *ngFor="let product of menu"  >
+        <mat-card class="card" *ngFor="let product of menu"  >
         <div>
         <mat-card-title> {{product.name}}</mat-card-title><br/>
         <mat-card-content> 
@@ -31,8 +32,8 @@
         </div>
          
     </mat-card>
-   
-</div>
+</div>  
+</body>
 
 <!-- <h1>MAIN COURSE :</h1>
 <div class="example-card"  >

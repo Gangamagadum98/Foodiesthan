@@ -1,4 +1,4 @@
-
+<body>
 <div class="example-card"  >
     <mat-card class="card" *ngFor="let item of items;let i = index">
         <div>
@@ -22,10 +22,10 @@
                 
 </div>
 
-<br/>
-<pre>
-<strong style="align-content: center;">TOTAL</strong> : {{total}}     
+<pre >
+<strong style="align-content: center;" class="total">TOTAL</strong> : {{total}}     
 
-<button mat-raised-button color="accent" (click)="pay()">PAYMENT</button>
+<button mat-raised-button color="accent" class="pay" (click)="pay()">PAYMENT</button>
 </pre>
+</body>
 

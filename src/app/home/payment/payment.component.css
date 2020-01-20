@@ -15,4 +15,6 @@
 agm-map {
     height: 300px;
 }
- 
+body{
+    background-color: lightgray;
+}

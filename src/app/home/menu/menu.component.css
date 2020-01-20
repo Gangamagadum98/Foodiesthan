@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: lightgray;
 }
 .card{
     width:25%;
@@ -40,4 +41,8 @@
   #search{
       margin-left: 1180px;
       margin-right: 10px;
+      
+  }
+  body{
+      background-color: lightgray;
   }
